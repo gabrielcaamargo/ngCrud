@@ -1,0 +1,59 @@
+.header-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 24px;
+  text-align: center;
+
+  h1, span{
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+
+  span{
+    color: rgb(93, 5, 201);
+  }
+
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input{
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      background: #eee;
+      padding: 8px 16px;
+      font-size: 16px;
+      border: 2px solid #fff;
+      transition: border-color .15s linear;
+      &::placeholder{
+        letter-spacing: -0.2px;
+      }
+
+      &:focus{
+        border-color: rgb(93, 5, 201);
+      }
+    }
+
+    button{
+      width: 100%;
+      text-align: center;
+      margin-top: 12px;
+      padding: 8px 16px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #FFF;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      background-color: rgb(93, 5, 201);
+      transition: background-color ease-in .1s;
+
+      &:hover{
+        background-color: rgb(65, 1, 143);
+      }
+    }
+  }
+}
